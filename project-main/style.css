@@ -1,0 +1,73 @@
+.car{
+    position: relative;
+}
+
+.wheel-1{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 12vw;
+    left: 6vw;
+    animation: car-move-1 3s infinite alternate;
+}
+
+.wheel-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes car-move-1{
+    from{
+        left: 6vw;
+        transform: rotate(0);
+    }
+    to{
+        left: calc(100% - 10vw - 43vw + 1vw);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes car-move-2{
+    from{
+        left: 42.6vw;
+        transform: rotate(0);
+    }
+    to{
+        left: calc(100% - 10vw - 10vw + 4.4vw);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes car-move{
+    from{
+        left: 0;
+    }
+    to{
+        left: calc(100% - 58vw);
+    }
+}
+
+.wheel-2{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 12vw;
+    left: 43vw;
+    animation: car-move-2 3s infinite alternate;
+}
+
+.wheel-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.body{
+    position: absolute;
+    width: 58vw;
+    animation: car-move 3s infinite alternate;
+}
+
+.body img{
+    width: 100%;
+    height: 100%;
+}
